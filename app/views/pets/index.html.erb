@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Found pets</h1>
+
+  <ul>
+    <% @pets.each do |pet| %>
+      <li>
+        <%= link_to pet.name, pet_path(pet) %> - Found <%= pet.found_days_ago %> days ago
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to "Report a found pet", new_pet_path, class: "btn btn-primary" %>
+</div>

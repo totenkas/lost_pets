@@ -7,3 +7,26 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Pet.destroy_all
+
+Pet.create!(
+  name: "Caramelo",
+  address: "Baoba Coworking",
+  species: "dog",
+  found_on: 3.days.ago.to_date
+)
+
+Pet.create!(
+  name: "Mingau",
+  address: "Bairro do Limoeiro",
+  species: "cat",
+  found_on: 1.day.ago.to_date
+)
+
+Pet.create!(
+  name: "Jujubinha",
+  address: "São Paulo",
+  species: "turtle",
+  found_on: 5.days.ago.to_date
+)
